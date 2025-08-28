@@ -1,7 +1,5 @@
-Application/Src/initConfigFreeRTOS.o: \
- ../Application/Src/initConfigFreeRTOS.cpp \
- C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/initConfigFreeRTOS.h \
- C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/PWMMotorDroneTask.h \
+Application/Src/modeTranform.o: ../Application/Src/modeTranform.cpp \
+ C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/modeTranformTask.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -42,11 +40,8 @@ Application/Src/initConfigFreeRTOS.o: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/PWMMotorRoverTask.h \
- C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/controlRXTask.h
-C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/initConfigFreeRTOS.h:
-C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/PWMMotorDroneTask.h:
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/modeTranformTask.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
@@ -89,5 +84,3 @@ C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/PWMMotorDroneTask.h
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
-C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/PWMMotorRoverTask.h:
-C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/controlRXTask.h:

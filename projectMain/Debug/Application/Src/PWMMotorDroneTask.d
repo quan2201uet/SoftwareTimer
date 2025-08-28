@@ -1,6 +1,6 @@
 Application/Src/PWMMotorDroneTask.o: \
  ../Application/Src/PWMMotorDroneTask.cpp \
- C:/Users/HongQuan/Downloads/projectMain/Application/Inc/PWMMotorDroneTask.h \
+ C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/PWMMotorDroneTask.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -42,7 +42,7 @@ Application/Src/PWMMotorDroneTask.o: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
-C:/Users/HongQuan/Downloads/projectMain/Application/Inc/PWMMotorDroneTask.h:
+C:/Users/HongQuan/Documents/NCKH/projectMain/Application/Inc/PWMMotorDroneTask.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:

@@ -8,5 +8,6 @@ void startControlRXTask(void* parameters)
 	for(;;)
 	{
 		xSemaphoreTake(controlRXSemHandle, portMAX_DELAY);
+
 	}
 }

@@ -89,8 +89,8 @@ all: main-build
 main-build: Drone_Rover.elf secondary-outputs
 
 # Tool invocations
-Drone_Rover.elf Drone_Rover.map: $(OBJS) $(USER_OBJS) C:\Users\HongQuan\Downloads\projectMain\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "Drone_Rover.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\HongQuan\Downloads\projectMain\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drone_Rover.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Drone_Rover.elf Drone_Rover.map: $(OBJS) $(USER_OBJS) C:\Users\HongQuan\Documents\NCKH\projectMain\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "Drone_Rover.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\HongQuan\Documents\NCKH\projectMain\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drone_Rover.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

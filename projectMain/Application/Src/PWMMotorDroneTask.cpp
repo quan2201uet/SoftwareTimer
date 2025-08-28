@@ -4,11 +4,37 @@ SemaphoreHandle_t PWMMotorDroneSemHandle;
 TaskHandle_t PWMMotorDroneTaskHandle;
 
 
-void startPWMMotorDroneTask(void* parameters)
+//void startPWMMotorDroneTask(void* parameters)
+//{
+//
+//	for(;;)
+//	{
+//
+//		xSemaphoreTake(PWMMotorDroneSemHandle, portMAX_DELAY);
+//
+//	}
+//}
+
+
+class startPWMMotorDroneTask
 {
-	for(;;)
+private:
+public:
+	void startTask()
 	{
-		xSemaphoreTake(PWMMotorDroneSemHandle, portMAX_DELAY);
+		for(;;)
+		{
+			if()
+			{
+				changeDrone();
+			}
+			else
+			{
+				chandRover();
+			}
+		}
 
 	}
-}
+	void changeDrone();
+	void changeRover();
+};
