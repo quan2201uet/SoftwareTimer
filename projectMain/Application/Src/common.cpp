@@ -1,6 +1,7 @@
 #include "common.h"
 
 // global variable
-enum state status = 0;
+state status = modeIde;
 
+QueueHandle_t ppmQueue;
 

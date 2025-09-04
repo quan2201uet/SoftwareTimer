@@ -1,5 +1,5 @@
-#ifndef __PWMMOTORDRONETASK_H
-#define __PWMMOTORDRONETASK_H
+#ifndef __SENDPWMDRONE_H
+#define __SENDPWMDRONE_H
 
 #include "cmsis_os.h"
 #include "main.h"

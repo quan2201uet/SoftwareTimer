@@ -1,4 +1,4 @@
-#include "PWMMotorDroneTask.h"
+#include <sendPWMDrone.h>
 
 SemaphoreHandle_t PWMMotorDroneSemHandle;
 TaskHandle_t PWMMotorDroneTaskHandle;
@@ -22,19 +22,20 @@ private:
 public:
 	void startTask()
 	{
+		void changeDrone();
+		void changeRover();
 		for(;;)
 		{
-			if()
+			if(true)
 			{
 				changeDrone();
 			}
 			else
 			{
-				chandRover();
+				changeRover();
 			}
 		}
 
 	}
-	void changeDrone();
-	void changeRover();
+
 };

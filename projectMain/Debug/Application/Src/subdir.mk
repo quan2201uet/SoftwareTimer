@@ -5,28 +5,28 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Application/Src/PWMMotorDroneTask.cpp \
 ../Application/Src/PWMMotorRoverTask.cpp \
 ../Application/Src/common.cpp \
 ../Application/Src/controlRXTask.cpp \
 ../Application/Src/initConfigFreeRTOS.cpp \
-../Application/Src/modeTranform.cpp 
+../Application/Src/modeTranform.cpp \
+../Application/Src/sendPWMDrone.cpp 
 
 OBJS += \
-./Application/Src/PWMMotorDroneTask.o \
 ./Application/Src/PWMMotorRoverTask.o \
 ./Application/Src/common.o \
 ./Application/Src/controlRXTask.o \
 ./Application/Src/initConfigFreeRTOS.o \
-./Application/Src/modeTranform.o 
+./Application/Src/modeTranform.o \
+./Application/Src/sendPWMDrone.o 
 
 CPP_DEPS += \
-./Application/Src/PWMMotorDroneTask.d \
 ./Application/Src/PWMMotorRoverTask.d \
 ./Application/Src/common.d \
 ./Application/Src/controlRXTask.d \
 ./Application/Src/initConfigFreeRTOS.d \
-./Application/Src/modeTranform.d 
+./Application/Src/modeTranform.d \
+./Application/Src/sendPWMDrone.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -36,7 +36,7 @@ Application/Src/%.o Application/Src/%.su Application/Src/%.cyclo: ../Application
 clean: clean-Application-2f-Src
 
 clean-Application-2f-Src:
-	-$(RM) ./Application/Src/PWMMotorDroneTask.cyclo ./Application/Src/PWMMotorDroneTask.d ./Application/Src/PWMMotorDroneTask.o ./Application/Src/PWMMotorDroneTask.su ./Application/Src/PWMMotorRoverTask.cyclo ./Application/Src/PWMMotorRoverTask.d ./Application/Src/PWMMotorRoverTask.o ./Application/Src/PWMMotorRoverTask.su ./Application/Src/common.cyclo ./Application/Src/common.d ./Application/Src/common.o ./Application/Src/common.su ./Application/Src/controlRXTask.cyclo ./Application/Src/controlRXTask.d ./Application/Src/controlRXTask.o ./Application/Src/controlRXTask.su ./Application/Src/initConfigFreeRTOS.cyclo ./Application/Src/initConfigFreeRTOS.d ./Application/Src/initConfigFreeRTOS.o ./Application/Src/initConfigFreeRTOS.su ./Application/Src/modeTranform.cyclo ./Application/Src/modeTranform.d ./Application/Src/modeTranform.o ./Application/Src/modeTranform.su
+	-$(RM) ./Application/Src/PWMMotorRoverTask.cyclo ./Application/Src/PWMMotorRoverTask.d ./Application/Src/PWMMotorRoverTask.o ./Application/Src/PWMMotorRoverTask.su ./Application/Src/common.cyclo ./Application/Src/common.d ./Application/Src/common.o ./Application/Src/common.su ./Application/Src/controlRXTask.cyclo ./Application/Src/controlRXTask.d ./Application/Src/controlRXTask.o ./Application/Src/controlRXTask.su ./Application/Src/initConfigFreeRTOS.cyclo ./Application/Src/initConfigFreeRTOS.d ./Application/Src/initConfigFreeRTOS.o ./Application/Src/initConfigFreeRTOS.su ./Application/Src/modeTranform.cyclo ./Application/Src/modeTranform.d ./Application/Src/modeTranform.o ./Application/Src/modeTranform.su ./Application/Src/sendPWMDrone.cyclo ./Application/Src/sendPWMDrone.d ./Application/Src/sendPWMDrone.o ./Application/Src/sendPWMDrone.su
 
 .PHONY: clean-Application-2f-Src
 

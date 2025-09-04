@@ -6,8 +6,14 @@ void init_Scheduler(void)
 	xTaskCreate(startPWMMotorDroneTask, "pwm drone", 200,  (void*)"NULL", 2, &PWMMotorDroneTaskHandle);
 	xTaskCreate(startPWMMotorRoverTask, "pwm rover", 200,  (void*)"NULL", 2, &PWMMotorRoverTaskHandle);
 
+	//Queue
+	ppmQueue = xQueueCreate(5, sizeof(PPM));
+
+
+	// semaphore
 	controlRXSemHandle = xSemaphoreCreateBinary();
 	PWMMotorDroneSemHandle = xSemaphoreCreateBinary();
 	PWMMotorRoverSemHandle = xSemaphoreCreateBinary();
+
 
 }
